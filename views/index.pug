@@ -1,0 +1,38 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        img(src="/static/logo.png", alt="kuchh bhi")
+        ul 
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection 
+        div.heading Welcome To HP Dance Academy
+        div.under !! Eat Sleep Dance Repeat !!
+    section#missionSection 
+        h1 Our Mission
+        div.card
+            h3 Freestyle 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi soluta voluptates accusamus saepe impedit tempore dignissimos fugit. Officia, delectus?
+            img(src="/static/card1.png", alt="kuchh bhi")
+        div.card
+            h3 Arabic 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi soluta voluptates accusamus saepe impedit tempore dignissimos fugit. Officia, delectus?
+            img(src="/static/card2.png", alt="kuchh bhi")
+        div.card
+            h3 Zumba 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi soluta voluptates accusamus saepe impedit tempore dignissimos fugit. Officia, delectus?
+            img(src="/static/card3.png", alt="kuchh bhi")
+    section#sponsorsSection 
+        h1 Our Sponsors
+    footer#footer 
+        | © 2015 - 2022 | HP Dance Academy. | All Rights Reserved with Copyright & TradeMarks 
+    script
+      include ../static/index.js

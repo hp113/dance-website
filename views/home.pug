@@ -1,0 +1,29 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style
+    style
+      include ../static/style.css
+
+block content 
+    section#introSection 
+        div.heading Welcome To HP Dance Academy
+        div.under !! Eat Sleep Dance Repeat !!
+    section#missionSection 
+        h1 Our Mission
+        div.card
+            h3 Freestyle 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi soluta voluptates accusamus saepe impedit tempore dignissimos fugit. Officia, delectus?
+            img(src="/static/card1.png", alt="kuchh bhi")
+        div.card
+            h3 Arabic 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi soluta voluptates accusamus saepe impedit tempore dignissimos fugit. Officia, delectus?
+            img(src="/static/card2.png", alt="kuchh bhi")
+        div.card
+            h3 Zumba 
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga excepturi soluta voluptates accusamus saepe impedit tempore dignissimos fugit. Officia, delectus?
+            img(src="/static/card3.png", alt="kuchh bhi")
+    section#sponsorsSection 
+        h1 Our Sponsors
